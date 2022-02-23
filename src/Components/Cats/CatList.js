@@ -1,11 +1,15 @@
+//unneeded file
+   
 import React, { Component } from 'react';
  
 const CatList = () => {
  return (
    <div>
-     {props.breeds.Map(cat => <li>cat</li> )}
+     <ul>
+       {this.state.breeds.map(cat => (<li key={breeds}>{cat}</li>) )}
+       </ul>
    </div>
  )
 }
  
-CatList;
+ export default CatList;
